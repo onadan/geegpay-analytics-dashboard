@@ -7,7 +7,7 @@ export default function App() {
     <>
       <Sidebar />
 
-      <div className="ml-20">
+      <div className="ml-16 sm:ml-20">
         <Header />
 
         <MainView />

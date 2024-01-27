@@ -54,10 +54,8 @@ const CustomTooltip = ({ active, payload }) => {
   if (active && payload && payload.length) {
     const value = payload[0].value;
     return (
-      <div className="bg-[#090C2C] h-[26px] w-[100px] px-4 rounded-md relative flex justify-center items-center">
-        <p className="text-xs text-white">
-          {USDollar.format(value)}
-          </p>
+      <div className="bg-[#090C2C] dark:bg-black h-[26px] w-[100px] px-4 rounded-md relative flex justify-center items-center">
+        <p className="text-xs text-white">{USDollar.format(value)}</p>
         <div id="triangle-down" className="fixed -bottom-1"></div>
       </div>
     );
@@ -98,7 +96,11 @@ export const SalesTrendBarChart = () => {
         </defs>
 
         {/* <CartesianGrid vertical={false} stroke={"#333"} /> */}
-        <CartesianGrid vertical={false} strokeDasharray="3 3" style={{background: "black", color: "black"}} />
+        <CartesianGrid
+          vertical={false}
+          strokeDasharray="3 3"
+          style={{ background: "black", color: "black" }}
+        />
         <XAxis
           dataKey="name"
           axisLine={false}

@@ -17,7 +17,7 @@ export default function Sidebar() {
   const [isDarkMode, toggleDarkMode] = useDarkMode();
   return (
     <>
-      <div className="flex fixed top-0 left-0 w-16 sm:w-20 flex-col justify-between pb-5 gap-[36px] dark:bg-neutral-900 dark:border-neutral-700 bg-[#F7F8FA] h-screen border-[#EBECF2] border pt-5 overflow-y-auto scrollbar-thin scrollbar-thumb-neutral-300 scrollbar-w-6">
+      <div className="flex fixed top-0 left-0 w-16 sm:w-20 flex-col justify-between pb-5 gap-[36px] dark:bg-neutral-900 dark:border-neutral-700 bg-[#F7F8FA] h-screen border-[#EBECF2] border pt-5 overflow-y-auto custom-scrollbar">
         <div className="flex flex-col gap-[26px] items-center">
           <img src="/logo.svg" alt="logo" className="py-1" />
 
