@@ -7,5 +7,15 @@ html {
 }
 
 body {
-  @apply dark:bg-neutral-900 dark:text-white bg-[#FAFAFA];
+  @apply dark:bg-neutral-950 dark:text-white bg-[#FAFAFA];
+}
+
+#triangle-down {
+  /* position: absolute; */
+  /* bottom: -10; */
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #090C2C;
 }
