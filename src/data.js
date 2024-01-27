@@ -68,3 +68,10 @@ export const lastOrdersData = [
     action: "View",
   },
 ];
+
+export const topPlatformsData = [
+    {name: "Book Bazaar", amount:"$2,500,000", stat: "+15%", width: 60},
+    {name: "Artisan Aisle", amount:"$1,800,000", stat: "+10%", width: 50},
+    {name: "Toy Troop", amount:"$1,200,000", stat: "+8%", width: 40},
+    {name: "XStore", amount:"$600,000", stat: "+5%", width: 45},
+]

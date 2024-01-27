@@ -31,15 +31,27 @@ html.dark #triangle-down {
 
 /* Track */
 .custom-scrollbar::-webkit-scrollbar-track {
+  background: #eee;
+}
+/* Track Dark */
+html.dark .custom-scrollbar::-webkit-scrollbar-track {
   background: #222;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 40px;
 }
 
 /* Handle */
 .custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #999;
+}
+/* Handle Dark */
+html.dark .custom-scrollbar::-webkit-scrollbar-thumb {
   background: #333;
 }
 
 /* Handle on hover */
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: #5;
+  background: #555;
 }

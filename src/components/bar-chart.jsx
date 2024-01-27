@@ -76,7 +76,7 @@ const CustomTooltip = ({ active, payload }) => {
 export const SalesTrendBarChart = () => {
   let [barGraphData, setBarGraphData] = React.useState({});
   return (
-    <ResponsiveContainer width="95%" height="90%">
+    <ResponsiveContainer width="100%" height="90%">
       <BarChart
         // width={700}
         // width={500}
@@ -99,20 +99,20 @@ export const SalesTrendBarChart = () => {
         <CartesianGrid
           vertical={false}
           strokeDasharray="3 3"
-          style={{ background: "black", color: "black" }}
+          // style={{ background: "black", color: "black" }}
         />
         <XAxis
           dataKey="name"
           axisLine={false}
           tickLine={false}
-          // className="dark"
-          style={{ fontSize: "10px" }}
+          className="font-semibold text-sm"
         />
 
         <YAxis
           axisLine={false}
           tickLine={false}
-          style={{ fontSize: "10px" }}
+          // style={{ fontSize: "10px" }}
+          className="font-semibold text-xs"
           ticks={[0, 5000, 10000, 20000, 30000, 40000, 50000]}
           domain={["dataMin", "dataMax"]}
           // tickCount={2} // Adjust this value to control the number of horizontal lines
